@@ -3,7 +3,6 @@ xj = 0    # nov števec za jutri
 
 
 izposojevalna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4"]
-ostala_delovna_mesta = ["interno delo 1", "interno delo 2"]
 imena = ["Andreja V. I.", "Masa", "Sara", "Karmen", "Andreja", "Andreja P.", "Mateja"]
 imena_jutri = imena[:]       #kopiramo seznam
 del imena_jutri[0]           #izbrišemo prvo mesto
