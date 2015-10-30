@@ -1,5 +1,5 @@
 x = 0     # števec 
-xj = 0    # nov števec za jutri
+y = 0    # nov števec za jutri
 
 
 izposojevalna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "informacije 1"]
@@ -22,10 +22,10 @@ print ()
 print ("Urnik za jutri: ")
 
 for delovno_mesto in izposojevalna_mesta:
-    print (delovno_mesto, "=>",imena_jutri [xj]) # d so že porabljeni
-    xj += 1
+    print (delovno_mesto, "=>",imena_jutri [y]) # x so že porabljeni
+    y += 1
     
 print ()
 print ("Interno delo jutri:")
-print (imena_jutri [xj:(len(imena_jutri))])
+print (imena_jutri [y:(len(imena_jutri))])
 print ()
