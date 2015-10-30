@@ -1,25 +1,26 @@
-## OPOZORILO: deluje le, če je število imen manjše ali enako številu delovnih mest!
-d = 0     ## števec delovnih mest
-dj = 0    ## nov števec delovnih mest za jutri
+## OPOZORILO: deluje le, če je število delovnih mest manjše ali enako številu imen!
+x = 0     ## števec 
+xj = 0    ## nov števec za jutri
 
-imena = ["Andreja V. I.", "Masa", "Sara", "Dusanka"]
+
 delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "interno delo", "interno delo 2"]
-delovna_mesta_jutri = delovna_mesta[:]       #kopiramo seznam
-del delovna_mesta_jutri[0]                   #izbrišemo prvo mesto
-delovna_mesta_jutri.append(delovna_mesta[0]) #dodamo na koncu prvo vrednost iz prejšnjega seznama
+imena = ["Andreja V. I.", "Masa", "Sara", "Dusanka", "Andreja"]
+imena_jutri = imena[:]       #kopiramo seznam
+del imena_jutri[0]           #izbrišemo prvo mesto
+imena_jutri.append(imena[0]) #dodamo na koncu prvo vrednost iz prejšnjega seznama
 
 print ()
 print ("Urnik za danes: ")
 
-for ime in imena:
-    print (ime, "=>",delovna_mesta [d])
-    d += 1
+for delovno_mesto in delovna_mesta:
+    print (delovno_mesto, "=>",imena [x])
+    x += 1
     
 print ()
 print ("Urnik za jutri: ")
 
-for ime in imena:
-    print (ime, "=>",delovna_mesta_jutri [dj]) ## d so že porabljeni
-    dj += 1
+for delovno_mesto in delovna_mesta:
+    print (delovno_mesto, "=>",imena_jutri [xj]) ## d so že porabljeni
+    xj += 1
     
 print ()
