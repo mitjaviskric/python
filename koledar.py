@@ -3,8 +3,8 @@ x = 0     ## števec
 xj = 0    ## nov števec za jutri
 
 
-delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "interno delo", "interno delo 2"]
-imena = ["Andreja V. I.", "Masa", "Sara", "Dusanka", "Andreja"]
+delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "interno delo"]
+imena = ["Andreja V. I.", "Masa", "Sara", "Karmen", "Andreja"]
 imena_jutri = imena[:]       #kopiramo seznam
 del imena_jutri[0]           #izbrišemo prvo mesto
 imena_jutri.append(imena[0]) #dodamo na koncu prvo vrednost iz prejšnjega seznama
