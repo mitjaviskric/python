@@ -2,7 +2,7 @@ x = 0     # števec
 xj = 0    # nov števec za jutri
 
 
-izposojevalna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4"]
+izposojevalna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "informacije 1"]
 imena = ["Andreja V. I.", "Masa", "Sara", "Karmen", "Andreja", "Andreja P.", "Mateja"]
 imena_jutri = imena[:]       #kopiramo seznam
 del imena_jutri[0]           #izbrišemo prvo mesto
