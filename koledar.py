@@ -1,5 +1,5 @@
 x = 0     # števec 
-y = 0    # nov števec za jutri
+y = 0     # nov števec za jutri
 
 
 izposojevalna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "informacije 1"]
