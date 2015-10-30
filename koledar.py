@@ -2,7 +2,7 @@
 i = 0     ## števec imen
 d = 0     ## števec delovnih mest
 ij = 0    ## nov števec imen za jutri
-dj = 0   ## števec delovnih mest za jutri z novim razporedom, premaknjenim za eno
+dj = 0    ## nov števec delovnih mest za jutri
 
 ime = ["Andreja V. I.", "Masa", "Sara", "Dusanka"]
 delovno_mesto = ["izposoja 1", "izposoja 2", "izposoja 3", "interno delo", "interno delo 2"]
