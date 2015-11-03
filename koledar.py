@@ -1,3 +1,5 @@
+# prikaz koledarja
+
 x = 0     # števec
 y = 0     # nov števec za jutri
 
