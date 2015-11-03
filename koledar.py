@@ -3,11 +3,13 @@ y = 0     # nov števec za jutri
 
 izposojevalna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "informacije 1"]
 imena = ["Andreja V. I.", "Masa", "Sara", "Karmen", "Andreja", "Andreja P.", "Mateja"]
-manjka = input ("Vnesite kdo manjka:")
-imena.remove(manjka)
 imena_jutri = imena[:]       #kopiramo seznam
 del imena_jutri[0]           #izbrišemo prvo mesto
 imena_jutri.append(imena[0]) #dodamo na koncu prvo vrednost iz prejšnjega seznama
+manjka = input ("Vnesite kdo manjka:")
+imena.remove(manjka)
+manjka_jutri = input ("Kdo bo manjkal jutri:")
+imena_jutri.remove(manjka_jutri)
 
 print ()
 print ("Urnik za danes: ")
