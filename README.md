@@ -17,7 +17,6 @@ https://mitjaiskric.github.io/python/
 * [Discover Python, Part 1: Python's built-in numerical types](http://www.ibm.com/developerworks/library/os-python1/) - eden izmed iz serije IBMovih člankov
 
 **Razno**
-* [Execute Python3 Online](http://www.tutorialspoint.com/execute_python3_online.php) - ne dela več?
-* [Repl.it](https://repl.it/languages/python3)
+* [python anywhere](https://www.pythonanywhere.com)
 * [Python učilnica](http://student.pfmb.uni-mb.si/%7Ejturnsek/python/index.html)
 * [Wiki](https://wiki.python.org/moin/BeginnersGuide/Programmers)
