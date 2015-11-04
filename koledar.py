@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # prikaz koledarja za dva dni
-# todo če nekdo manjka, potem je lahko tisti, ki nadomešča, drug dan na istem mestu...
+# To do: vnos več ljudi naenkrat.
 
 x = 0     # števec
 y = 0     # nov števec za jutri
