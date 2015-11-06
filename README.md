@@ -8,7 +8,7 @@ https://mitjaiskric.github.io/python/
 * [Python Docs](https://docs.python.org) - Uradni vodič
 
 **Knjige**
-* [Think Python](http://www.greenteapress.com/thinkpython2/index.html) - PDF na Dropbox-u
+* [Think Python](http://www.greenteapress.com/thinkpython2/html/index.html) - PDF na Dropbox-u
 * [Dive into Python 3](http://www.diveintopython3.net/)
 * [Python Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) - PDF na Dropbox-u
 * [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/)
