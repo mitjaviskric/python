@@ -7,7 +7,7 @@
 x = 0     # števec
 y = 0     # nov števec za jutri
 
-izposojevalna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "informacije 1"]
+delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "informacije 1"]
 imena = ["Andreja VI", "Maša", "Sara", "Karmen", "Andreja", "Andreja P", "Mateja"]
 # seznam za jutri
 imena_jutri = imena[:]       # kopiramo seznam
@@ -28,7 +28,7 @@ if manjka_jutri != "":       # če [enter] pojdi naprej
 print ()
 print ("Urnik za danes: ")
 
-for delovno_mesto in izposojevalna_mesta:
+for delovno_mesto in delovna_mesta:
     print (delovno_mesto, "=>",imena [x])
     x += 1
 
@@ -38,7 +38,7 @@ print (imena [x:(len(imena))]) #izpiše imena, ki so ostala
 print ()
 print ("Urnik za jutri: ")
 
-for delovno_mesto in izposojevalna_mesta:
+for delovno_mesto in delovna_mesta:
     print (delovno_mesto, "=>",imena_jutri [y]) # x so že porabljeni
     y += 1
 
