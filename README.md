@@ -6,6 +6,7 @@ https://mitjaiskric.github.io/python/
 **Uradno**
 * [python.org](http://www.python.org/) - Domača stran programskega jezika Python
 * [Python Docs](https://docs.python.org) - Uradni vodič
+* [The Python Language Reference](https://docs.python.org/3/reference/index.html#reference-index)
 
 **Knjige**
 * [Think Python](http://www.greenteapress.com/thinkpython2/html/index.html) - PDF na Dropbox-u
