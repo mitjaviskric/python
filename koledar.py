@@ -25,16 +25,23 @@ manjka_jutri = input ("Vnesite, kdo bo manjkal jutri:")
 if manjka_jutri != "":       # če [enter] pojdi naprej
     imena_jutri.remove(manjka_jutri) # izbrišemo ime, če manjka jutri
 
+def delovno_mesto_ime():
+    s=[]
+    x=0
+    for delovno_mesto in delovna_mesta:
+        print (delovno_mesto, "=>",imena [x])
+        x += 1
+    return s
+
 print ()
 print ("Urnik za danes: ")
+print (delovno_mesto_ime(1))
 
-for delovno_mesto in delovna_mesta:
-    print (delovno_mesto, "=>",imena [x])
-    x += 1
+i = imena [x:(len(imena))]
 
 print ()
 print ("Interno delo:")
-print (imena [x:(len(imena))]) #izpiše imena, ki so ostala
+print (i) #izpiše imena, ki so ostala
 print ()
 print ("Urnik za jutri: ")
 
@@ -42,7 +49,9 @@ for delovno_mesto in delovna_mesta:
     print (delovno_mesto, "=>",imena_jutri [y]) # x so že porabljeni
     y += 1
 
+ij = imena_jutri [y:(len(imena_jutri))]
+
 print ()
 print ("Interno delo jutri:")
-print (imena_jutri [y:(len(imena_jutri))])
+print (ij)
 print ()
