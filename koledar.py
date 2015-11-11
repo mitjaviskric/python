@@ -1,48 +1,31 @@
+__author__ = 'MIAV'
 # -*- coding: utf-8 -*-
 
-# prikaz koledarja za dva dni
-# todo: premik ostalih za dva!
-# todo: vnos več ljudi naenkrat.
+import datetime
+import calendar
+import time
 
-x = 0     # števec
-y = 0     # nov števec za jutri
+ čas =
+print trenutni čas
 
-delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "informacije 1"]
-imena = ["Andreja VI", "Maša", "Sara", "Karmen", "Andreja", "Andreja P", "Mateja"]
-# seznam za jutri
-imena_jutri = imena[:]       # kopiramo seznam
-del imena_jutri[0]           # izbrišemo prvo ime
-imena_jutri.append(imena[0]) # dodamo na koncu prvo vrednost iz prejšnjega seznama
+delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "S1", "S2", "L","M", "N"]
+turnus1 = ["Andreja VI", "Irena", "Sara", "Karmen", "Andreja M", "Suzana Š", "Maja L", "Tomaž M", "Dušanka", ]
+turnus2 = ["Sabina","Katja", "Mateja", "Anja", "Janez", "Tomaž Mi", "Maja M", "Suzana HP", "Maša", "Igor",]
+odsotni= []
 
-manjka = input ("Vnesite kdo manjka:")
-if manjka != "":             # če [enter] pojdi naprej
-    imena.remove(manjka)     # izbrišemo ime, če manjka
-    imena_jutri.remove(manjka)   # tisti, ki manjka danes, a ne bo jutri, gre
-    imena_jutri.append(manjka)   # na konec (da se ostali premaknejo) - NAPAKA? - premaknejo se za dva!
+x=1
+while x != 0:
+    manjka=input("Vnesite kdo manjka:")
+    if manjka in turnus1:
+      turnus1.remove(manjka)
+      odsotni.append(manjka)
+      x=2
+    elif manjka in turnus2:
+      turnus2.remove(manjka)
+      odsotni.append(manjka)
+      x=2
+    else:
+        x=0
 
-# jutri
-manjka_jutri = input ("Vnesite, kdo bo manjkal jutri:")
-if manjka_jutri != "":       # če [enter] pojdi naprej
-    imena_jutri.remove(manjka_jutri) # izbrišemo ime, če manjka jutri
-
-print ()
-print ("Urnik za danes: ")
-
-for delovno_mesto in delovna_mesta:
-    print (delovno_mesto, "=>",imena [x])
-    x += 1
-
-print ()
-print ("Interno delo:")
-print (imena [x:(len(imena))]) #izpiše imena, ki so ostala
-print ()
-print ("Urnik za jutri: ")
-
-for delovno_mesto in delovna_mesta:
-    print (delovno_mesto, "=>",imena_jutri [y]) # x so že porabljeni
-    y += 1
-
-print ()
-print ("Interno delo jutri:")
-print (imena_jutri [y:(len(imena_jutri))])
-print ()
+print(turnus1)
+print(turnus2)
