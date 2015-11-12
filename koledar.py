@@ -2,8 +2,14 @@ __author__ = 'MIAV'
 # -*- coding: utf-8 -*-
 
 import datetime
+from datetime import date, tzinfo, timedelta, datetime
 import calendar
 import time
+from time import localtime
+import locale
+locale.setlocale(locale.LC_ALL, "sl_SI")
+import os
+os.environ['TZ'] = 'Europe/Ljubljana'
 
 delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "S1", "S2", "L", "M", "N"]
 turnus1 = ["Andreja VI", "Irena", "Sara", "Karmen", "Andreja M", "Suzana Š", "Maja L", "Tomaž M", "Dušanka"]
@@ -11,9 +17,16 @@ turnus2 = ["Sabina", "Katja", "Mateja", "Anja", "Janez", "Tomaž Mi", "Maja M", 
 odsotni1 = []
 odsotni2 = []
 
+# pravila za izmene
+danasnji_datum = time.strftime ("%d.%m.%Y")
+print ("Datum: ", danasnji_datum)
+trenutni_cas = time.strftime ("%H:%M:%S")
+print ("Ura: ", trenutni_cas)
+
+# določimo kdo manjka
 x=1
 while x != 0:
-    manjka=input("Vnesite kdo manjka:")
+    manjka=input("Vnesite kdo manjka: ")
     if manjka in turnus1:
         turnus1.remove(manjka)
         odsotni1.append(manjka)
@@ -25,7 +38,8 @@ while x != 0:
     else:
         x=0
 
-print("Turnus 1", turnus1)
-print("Odsotni iz turnusa 1:", odsotni1)
-print("Turnus 2", turnus2)
-print("Odsotni iz turnusa 2:", odsotni2)
+print("Turnus 1: ", turnus1)
+print("Odsotni iz turnusa 1: ", odsotni1)
+print ()
+print("Turnus 2: ", turnus2)
+print("Odsotni iz turnusa 2: ", odsotni2)
