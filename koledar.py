@@ -15,17 +15,17 @@ x=1
 while x != 0:
     manjka=input("Vnesite kdo manjka:")
     if manjka in turnus1:
-      turnus1.remove(manjka)
-      odsotni1.append(manjka)
-      x=2
+        turnus1.remove(manjka)
+        odsotni1.append(manjka)
+        x=2
     elif manjka in turnus2:
-      turnus2.remove(manjka)
-      odsotni2.append(manjka)
-      x=2
+        turnus2.remove(manjka)
+        odsotni2.append(manjka)
+        x=2
     else:
         x=0
 
-print("Turnus1", turnus1)
-print("Odsotni:", odsotni1)
-print("Turnus2", turnus2)
-print("Odsotni:", odsotni2)
+print("Turnus 1", turnus1)
+print("Odsotni iz turnusa 1:", odsotni1)
+print("Turnus 2", turnus2)
+print("Odsotni iz turnusa 2:", odsotni2)
