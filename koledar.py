@@ -18,10 +18,10 @@ odsotni1 = []
 odsotni2 = []
 
 # pravila za izmene
-danasnji_datum = time.strftime ("%d.%m.%Y")
-print ("Datum: ", danasnji_datum)
-trenutni_cas = time.strftime ("%H:%M:%S")
-print ("Ura: ", trenutni_cas)
+datum = time.strftime ("%d.%m.%Y")
+print ("Datum: ", datum)
+ura = time.strftime ("%H:%M:%S")
+print ("Ura: ", ura)
 
 # določimo kdo manjka
 x=1
