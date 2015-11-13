@@ -2,10 +2,8 @@ __author__ = 'MIAV'
 # -*- coding: utf-8 -*-
 
 import datetime
-from datetime import date, tzinfo, timedelta, datetime
 import calendar
 import time
-from time import localtime
 import locale
 locale.setlocale(locale.LC_ALL, "sl_SI")
 import os
@@ -17,11 +15,16 @@ turnus2 = ["Sabina", "Katja", "Mateja", "Anja", "Janez", "Tomaž Mi", "Maja M", 
 odsotni1 = []
 odsotni2 = []
 
+# določimo teden
+# datum = time.strftime ("%d.%m.%Y")
+teden = int(time.strftime("%V"))
+# ura = time.strftime ("%H:%M:%S")
+
 # pravila za izmene
-datum = time.strftime ("%d.%m.%Y")
-print ("Datum: ", datum)
-ura = time.strftime ("%H:%M:%S")
-print ("Ura: ", ura)
+if teden % 2 == 0:
+    print ("dopoldne turnus1, popoldne turnus2")
+else:
+    print ("dopoldne turnus2, popoldne turnus1")
 
 # določimo kdo manjka
 x=1
