@@ -12,6 +12,7 @@ https://mitjaiskric.github.io/python/
 * [Think Python](http://www.greenteapress.com/thinkpython2/html/index.html) - PDF na Dropbox-u
 * [Dive into Python 3](http://www.diveintopython3.net/)
 * [Python Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) - PDF na Dropbox-u
+* [Python for Informatics: Exploring Information](http://www.pythonlearn.com/html-270/) - Coursera
 * [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/)
 
 **Članki**
