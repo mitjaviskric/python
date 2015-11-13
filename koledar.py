@@ -19,21 +19,25 @@ odsotni2 = []
 
 # določimo leto
 leto = int(time.strftime ("%Y"))
+
 # določimo teden
 datum = time.strftime ("%d.%m.%Y")
 print (datum)
 teden = int(time.strftime("%V"))
+
 # določimo, ali je sobota danes ali jutri
 danes = datetime.date.today()
 print ("Danes smo", danes)
 dan = danes.isoweekday()
 print ("Dan v tednu: ", dan)
+dnevi = calendar.weekheader(3)
+print (dnevi)
 
 # ura = time.strftime ("%H:%M:%S")
 
 # določimo praznike
 velika_noc = easter.easter(leto)
-print ("velika noč: ", velika_noc)
+print ("Velika noč: ", velika_noc)
 
 # pravila za izmene
 if teden % 2 == 0:
@@ -58,6 +62,7 @@ while x != 0:
     else:
         x=0
 
+#prikažemo turnuse in odsotne
 print("Turnus 1: ", turnus1)
 print("Odsotni iz Turnusa 1: ", odsotni1)
 print ()
