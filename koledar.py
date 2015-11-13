@@ -1,5 +1,6 @@
-__author__ = 'MIAV'
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python3
+__author__ = 'MIAV'
 
 import datetime
 import calendar
@@ -22,6 +23,12 @@ leto = int(time.strftime ("%Y"))
 datum = time.strftime ("%d.%m.%Y")
 print (datum)
 teden = int(time.strftime("%V"))
+# določimo, ali je sobota danes ali jutri
+danes = datetime.date.today()
+print ("Danes smo", danes)
+dan = danes.isoweekday()
+print ("Dan v tednu: ", dan)
+
 # ura = time.strftime ("%H:%M:%S")
 
 # določimo praznike
