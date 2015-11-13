@@ -8,6 +8,7 @@ import locale
 locale.setlocale(locale.LC_ALL, "sl_SI")
 import os
 os.environ['TZ'] = 'Europe/Ljubljana'
+from dateutil import easter
 
 delovna_mesta = ["izposoja 1", "izposoja 2", "izposoja 3", "izposoja 4", "S1", "S2", "L", "M", "N"]
 turnus1 = ["Andreja VI", "Irena", "Sara", "Karmen", "Andreja M", "Suzana Š", "Maja L", "Tomaž M", "Dušanka"]
@@ -15,16 +16,25 @@ turnus2 = ["Sabina", "Katja", "Mateja", "Anja", "Janez", "Tomaž Mi", "Maja M", 
 odsotni1 = []
 odsotni2 = []
 
+# določimo leto
+leto = int(time.strftime ("%Y"))
 # določimo teden
-# datum = time.strftime ("%d.%m.%Y")
+datum = time.strftime ("%d.%m.%Y")
+print (datum)
 teden = int(time.strftime("%V"))
 # ura = time.strftime ("%H:%M:%S")
 
+# določimo praznike
+velika_noc = easter.easter(leto)
+print ("velika noč: ", velika_noc)
+
 # pravila za izmene
 if teden % 2 == 0:
-    print ("dopoldne turnus1, popoldne turnus2")
+    print ("Dopoldne: Turnus 1")
+    print ("Popoldne: Turnus 2")
 else:
-    print ("dopoldne turnus2, popoldne turnus1")
+    print ("Dopoldne: Turnus 2")
+    print ("Popoldne: Turnus 1")
 
 # določimo kdo manjka
 x=1
@@ -42,7 +52,7 @@ while x != 0:
         x=0
 
 print("Turnus 1: ", turnus1)
-print("Odsotni iz turnusa 1: ", odsotni1)
+print("Odsotni iz Turnusa 1: ", odsotni1)
 print ()
 print("Turnus 2: ", turnus2)
-print("Odsotni iz turnusa 2: ", odsotni2)
+print("Odsotni iz Turnusa 2: ", odsotni2)
