@@ -9,6 +9,7 @@ https://mitjaiskric.github.io/python/
 * [The Python Language Reference](https://docs.python.org/3/reference/index.html#reference-index)
 
 **Knjige**
+* [Učbenik RAČUNALNIŠTVO IN INFORMATIKA 1](http://lusy.fri.uni-lj.si/ucbenik/RIN1/index.html)
 * [Think Python](http://www.greenteapress.com/thinkpython2/html/index.html) - PDF na Dropbox-u
 * [Dive into Python 3](http://www.diveintopython3.net/)
 * [Python Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) - PDF na Dropbox-u
